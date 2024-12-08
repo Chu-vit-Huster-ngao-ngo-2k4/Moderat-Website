@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    color: #fff;
+}
+
+html{
+    line-height: 1.15; 
+    -webkit-text-size-adjust: 100%; /*Ngan van ban tu dong phong to tren thiet bi di dong */
+    font-size: 10px; /* Giá trị gốc */
+}
+
+body{
+    font-size: 18px; /* Kích thước font mặc định */
+    color: #fff;
+    background-color: #fff; /* Màu nền mặc định */
+}
+
+/* Các phần tử khối */
+h1, h2, h3, h4, h5, h6 {
+    margin: 0; /* Loại bỏ margin cho tiêu đề */
+}
+
+
+p {
+    margin: 0; /* Loại bỏ margin cho đoạn văn */
+    font-size: 18px;
+    font-weight: 100;
+}
+
+/* Liệt kê */
+ul, ol {
+    list-style: none; /* Loại bỏ dấu đầu dòng */
+    padding: 0; /* Loại bỏ padding */
+}
+
+/* Hình ảnh */
+img {
+    max-width: 100%; /* Đảm bảo hình ảnh không vượt quá chiều rộng của phần tử chứa */
+    height: auto; /* Đảm bảo tỉ lệ hình ảnh được giữ nguyên */
+}
+
+/* Đường viền */
+hr {
+    border: none; /* Loại bỏ đường viền mặc định */
+    height: 1px; /* Đặt chiều cao */
+    background-color: #ccc; /* Màu đường viền */
+}
+
+/* Các phần tử khác */
+table {
+    border-collapse: collapse; /* Loại bỏ khoảng cách giữa các ô */
+    width: 100%; /* Đặt chiều rộng mặc định cho bảng */
+}
+
+th, td {
+    padding: 8px; /* Thêm padding cho ô */
+    text-align: left; /* Căn trái nội dung */
+}
+
+/* Tùy chỉnh thanh cuộn cho Chrome, Safari và Edge */
+::-webkit-scrollbar {
+    width: 5px; /* Độ rộng của thanh cuộn */
+}
+
+::-webkit-scrollbar-track {
+    background: #000; /* Màu nền của track */
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888; /* Màu của thanh cuộn */
+    border-radius: 10px; /* Bo góc cho thanh cuộn */
+    height: 30px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Màu khi hover */
+}

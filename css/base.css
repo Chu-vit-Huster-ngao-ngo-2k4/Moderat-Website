@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@font-face {
+    font-family: 'Monument Extended';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Monument Extended'), url('https://fonts.cdnfonts.com/s/19595/MonumentExtended-Regular.woff') format('woff');
+}
+
+/* @font-face {
+    font-family: 'Monument Extended';
+    font-style: normal;
+    font-weight: 800;
+    src: local('Monument Extended'), url('https://fonts.cdnfonts.com/s/19595/MonumentExtended-Ultrabold.woff') format('woff');
+} */
+
+body{
+    font-family:"Montserrat", sans-serif ;
+    
+}
+
+h1, h2{
+    font-family:var(--heading-font);
+    letter-spacing: 5px; /* Đặt khoảng cách giữa các chữ */
+}
+
+:root{
+    --text-font: "Montserrat", sans-serif;
+    --heading-font: "Monument Extended", "Helvetica", Arial, sans-serif;
+    --background-color: #000;
+    --text-color: #fff;
+    --green-color: #50A584;
+}
+
+h3, h4{
+    font-family: var(--text-font) ;
+    font-size: 2rem;
+}
+
+h4{
+    font-size: 1.4rem;
+}

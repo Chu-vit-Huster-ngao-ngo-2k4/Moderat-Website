@@ -1,0 +1,222 @@
+
+body{
+    background-color: var(--background-color);
+    font-size: var(--text-font);
+}
+
+
+
+
+.background{
+    background-image: url(../images/heading-img.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute; /* Đặt vị trí cố định */
+    top: 0;
+    width: 100%; /* Chiều rộng 100% */
+    height: 100%; /* Chiều cao 100% */
+    background-size: cover; /* Đảm bảo hình ảnh bao phủ mà không bị biến dạng */
+    z-index: -10; /* Đặt hình ảnh phía sau các nội dung khác */
+
+}
+
+.background::before{
+    content: "";
+    position: absolute;
+    top: 0; /* Căn lề trên */
+    left: 0; /* Căn lề trái */
+    width: 100%; /* Chiều rộng 100% */
+    height: 100%; /* Chiều cao 100% */
+    background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.5));
+    backdrop-filter: blur(5px); /* Tạo hiệu ứng mờ cho lớp phủ */
+    z-index: -9; /* Đặt lớp phủ phía dưới nội dung */
+}
+
+.Container {
+    margin: 3rem 6rem;
+}
+.header .logo {
+    width: 5rem;
+    position: fixed;
+    top: 3rem;
+}
+
+
+.taskbar{
+    display: block;
+    text-align: center;
+    font-size: 3rem;
+    position: fixed;
+    right: 6rem;
+    top: 4rem;
+
+}
+
+.taskbar .taskbar-list{
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.8rem;
+    height: 30rem;
+    justify-content: space-around;
+}
+
+
+.intro-main {
+    margin-top: 17rem;
+    display: flex;
+
+}
+
+.intro-box{
+    position: relative;
+}
+
+.intro-box .intro-box-img{
+   width: 47rem;
+   position: block;
+}
+.intro-box .intro-box-des{
+    writing-mode: vertical-rl; 
+    position: absolute;
+    bottom: 0;
+    left: -3.4rem;
+    padding: 0.5rem;
+    font-style: italic;
+    transform: rotate(180deg);
+    font-weight: 400;
+    
+}
+
+.intro-box-des .green-color{
+    color: var(--green-color);
+    font-weight: 500;
+}
+
+
+.intro-content{
+    margin-left: 10rem;
+    margin-top: 10rem;
+}
+
+.intro-content .uncolor-intro-content {
+    font-size: 5rem;
+    text-align: center; /* Căn giữa chữ */
+    letter-spacing: 5px; /* Đặt khoảng cách giữa các chữ */
+}
+
+.transparent-text {
+    color: transparent;
+    -webkit-text-stroke: 1px white;
+  }
+
+.intro-content .inner-content{
+    font-size: 3.8rem;
+    margin: 1rem 0;
+}
+
+.btn-group{
+    margin-top: 6rem;
+}
+.btn-group .listen-btn{
+    font-family: var(--heading-font) ;
+   padding: 1.5rem 2rem;
+   font-size: 1.4rem;
+   font-weight: 400;
+   letter-spacing: 2px;
+   background-color: var(--green-color);
+   border: none;
+   cursor: pointer;
+   margin-right: 1.5rem;
+}
+
+.listen-btn i {
+    margin-right: 5px; /* Khoảng cách giữa icon và chữ */
+    color: inherit; /* Kế thừa màu từ nút */
+}
+
+.btn-group .share-btn {
+    background-color: rgba(0, 0, 0, 0) ;
+    border: 1px solid #fff; 
+}
+
+.listen-btn:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+
+.track {
+    margin-top: 8rem;
+}
+
+.track-heading{
+    font-size: 4.5rem;
+    font-weight: 400;
+}
+
+.track .track-item{
+    font-size: 20px;
+    display: flex;
+    width: 50rem;
+    margin-top: 2rem;
+    margin-bottom: 8rem;
+    align-items: center;
+}
+
+.track-item i{
+    padding: 2.5rem;
+    border: 1px solid #fff;
+    border-left: none;
+}
+
+.track-item .first-item{
+    border-left: 1px solid #fff ;
+}
+
+.track-item .first-item p {
+    margin-left: 1.5rem;
+    display: inline;
+    font-size: 1.6rem;
+}
+
+.song-box{
+    margin-top: 4rem;
+    margin-left: 5rem;
+}
+
+.song-decor{
+    margin-top: 2.5rem;
+    display: flex;
+    justify-content: space-between;
+}
+.song-decor i{
+    font-size: 2rem;
+     cursor: pointer;
+}
+
+.playButton{
+    display : flex;
+    align-items: center;
+}
+
+.playButton .song-group{
+    margin-left: 8rem;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.playButton .song-group .title{
+    margin-bottom: 1rem;
+}
+
+.song-decor .song-time{
+    font-weight: 300;
+    font-size: 1.6rem;
+}
+
+.song-decor .song-time i{
+    margin-left: 2rem;
+    font-size: 1.6rem;
+}
