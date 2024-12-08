@@ -220,3 +220,106 @@ body{
     margin-left: 2rem;
     font-size: 1.6rem;
 }
+
+
+.music-video{
+    margin-top: 8rem;
+}
+
+.music-video .track-heading{
+    margin: 4rem auto;
+}
+
+
+
+
+.line{
+    margin-top: 15rem;
+    margin-bottom: 5rem;
+}
+
+.footer .inner-footer{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4rem;
+}
+
+.inner-footer h2{
+    font-size: 1.6rem;
+    font-weight: 200;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.news h2{
+    color: #969292;
+}
+
+.news p {
+    font-family: var(--text-font);
+    font-size: 1.6rem;
+    font-weight: 400;
+    font-style: italic;
+    letter-spacing: 2px;
+}
+
+.news .email{
+    margin-top: 2rem;
+    border-bottom: 1px solid #c8c7c7;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.email .input-email{
+    padding: 2rem 0;
+    background-color: black;
+    border: none;
+    font-size: 2rem;
+    width: 80%;
+    outline: none;
+}
+
+.email i{
+    font-size: 1.6rem;
+}
+
+
+.more-infor {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    display : flex;
+    justify-content: space-between;
+    
+}
+
+.more-infor p, .footer-end p{
+    font-family: var(--text-font);
+    font-size: 1.6rem;
+    font-weight: 400;
+    font-style: italic;
+    letter-spacing: 2px;
+}
+
+.more-infor .social-infor{
+    width: 36%;
+    font-size: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-end p{
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    font-weight: 400;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.footer-end{
+    margin-top: 8rem;
+    margin-bottom: 8rem;
+}
