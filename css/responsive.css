@@ -1,0 +1,76 @@
+/* QUERY CHO MAN HINH DIEN THOAI */
+
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    /* CSS dành cho kích thước nhỏ hơn 576px */
+
+    .intro-content {
+        margin-left: auto;
+        margin-right: auto; /* Bỏ margin-left khi màn hình nhỏ */
+        margin-top: 2rem; /* Tùy chỉnh giá trị mới nếu cần */
+        
+    }
+
+    html{
+        font-size: 8px;
+    }
+
+    .header .logo{
+        left: 3rem;
+        width: 3rem;
+    }
+
+    .taskbar{
+        display: flex;
+        text-align: center;
+        font-size: 3rem;
+        position: fixed;
+        right: auto;
+        top: 3rem;
+    }
+    
+
+    .taskbar .bar-container{
+        position: fixed;
+        top: 3rem;
+        right: 3rem;
+        
+    }
+
+    .taskbar .taskbar-list{
+        flex-direction: row;
+        justify-content: space-around;
+        width: 26rem;
+        position: fixed;
+        top: 0;
+        right: 30%;
+    }
+
+    
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    /* CSS dành cho từ 576px đến dưới 768px */
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    /* CSS dành cho từ 768px đến dưới 992px */
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    /* CSS dành cho từ 992px đến dưới 1200px */
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+    /* CSS dành cho từ 1200px đến dưới 1400px */
+}
+
+/* Extra extra large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+    /* CSS dành cho từ 1400px trở lên */
+}
