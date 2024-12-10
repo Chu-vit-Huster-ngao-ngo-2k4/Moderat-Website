@@ -16,7 +16,20 @@
         font-size: 8px;
     }
 
+    .header {
+        position: fixed;
+        top: 0; /* Cố định phần header ở trên cùng */
+        left: 0;
+        z-index: 1000; /* Đảm bảo nó nằm trên các phần tử khác */
+        height: 60px; /* Hoặc giá trị phù hợp */
+        width: 100%; /* Chiều rộng bằng kích thước màn hình */
+        max-width: 100vw; /* Đảm bảo không vượt qua chiều rộng */
+        overflow: hidden; /* Ẩn mọi nội dung vượt ra ngoài */
+        background-color: black;
+    }
+
     .header .logo{
+        top: 2rem;
         left: 3rem;
         width: 3rem;
     }
@@ -25,14 +38,12 @@
         display: flex;
         text-align: center;
         font-size: 3rem;
-        position: fixed;
-        right: auto;
-        top: 3rem;
+        right: 3rem;
+        top: 2rem;
     }
     
 
     .taskbar .bar-container{
-        position: fixed;
         top: 3rem;
         right: 3rem;
         
@@ -43,10 +54,10 @@
         justify-content: space-around;
         width: 26rem;
         position: fixed;
-        top: 0;
+        top: -1rem;
         right: 30%;
     }
-
+    
     
 }
 
